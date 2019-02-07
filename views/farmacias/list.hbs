@@ -1,0 +1,16 @@
+<div>
+
+  <div>
+    <form action="">
+      <input type="text" name="buscador">
+      <input type="submit" value="buscar">
+    </form>
+  </div>
+
+  {{#each farmacias}}
+    <div>
+      <a href="/farmacias/detail/{{this._id}}">{{this.nombre}}</a>
+      <img src="{{this.photoURL}}" alt="{{this.nombre}}">
+    </div>
+  {{/each}}
+</div>
